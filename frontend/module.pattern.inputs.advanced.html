@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrón modular - Avanzado</title>
+</head>
+<body>
+    <h1>Patrón modular - Avanzado</h1>
+    <form id="student_form">
+        <label for="">Nombre</label>
+        <input name="student_name" type="text">
+        <br>
+        <label for="">Edad</label>
+        <input name="student_age" type="text">
+        <br>
+        <label for="">Gustos</label>
+        <input name="student_hobbies" type="text">
+        <br>
+        <button type="submit">Agregar a la tabla</button>
+    </form>
+    <table>
+        <thead>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Gustos</th>
+            <th>Eliminar</th>
+            <th>Actualizar</th>
+        </thead>
+        <tbody id="students_list"></tbody>
+    </table>
+    <script src="module.pattern.inputs.advanced.utils.js"></script>
+    <script src="module.pattern.inputs.advanced.module.js"></script>
+</body>
+</html>

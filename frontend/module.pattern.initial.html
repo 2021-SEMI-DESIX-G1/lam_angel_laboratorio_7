@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de estructura de código</title>
+</head>
+
+<body>
+    <h1>Contador de letras</h1>
+    <p id="answer"></p>
+    <script>
+        (() => {
+            // Ejemplo de módulo (Module Pattern)
+            // Más información: https://addyosmani.com/resources/essentialjsdesignpatterns/book/index.html
+            const App = {
+                data: {
+                    text: '',
+                    answer: {}
+                },
+                htmlElements: {
+                    answerParagraph: document.getElementById('answer')
+                },
+                init: (text) => {
+                    App.data.text = text;
+                },
+                countLetters: () => {
+                    const text = App.data.text;
+                    const answer = {};
+                    App.data.answer = answer;
+                    return answer;
+                },
+                printResult: () => {
+                    App.htmlElements.answerParagraph.innerText = JSON.stringify(App.data.answer);
+                }
+            }
+            const exampleText = 'AABBACD';
+            App.init(exampleText);
+            App.countLetters();
+            App.printResult();
+        })();
+    </script>
+</body>
+
+</html>
