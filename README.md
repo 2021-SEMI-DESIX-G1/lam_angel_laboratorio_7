@@ -1,2 +1,2 @@
-# module_pattern_example
-Ejemplo de patrón basado en módulos
+# laboratorio 7
+Agregar frontend y backend actualizar y eliminar
