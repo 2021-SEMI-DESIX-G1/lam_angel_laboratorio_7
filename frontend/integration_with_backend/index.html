@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuarios</title>
 </head>
+
 <body>
     <h1>Usuarios del sistema de prueba</h1>
     <hr>
@@ -15,19 +17,24 @@
         <label for="age">Edad</label>
         <input name="age" type="number">
         <select name="status" id="">
-            <option value="activo">Activo</option>
-            <option value="inactivo">Inactivo</option>
+            <option value="active">Activo</option>
+            <option value="inactive">Inactivo</option>
         </select>
-        <button type="submit">Guardar</button>
+        <button type="button" id="update" style="display: none;">Actualizar</button>
+        <button type="submit" id="submit">Guardar</button>
+
     </form>
     <table>
         <thead>
             <th>Nombre</th>
             <th>Edad</th>
             <th>Estado</th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
         </thead>
         <tbody id="user_list"></tbody>
     </table>
-<script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
+
 </html>
